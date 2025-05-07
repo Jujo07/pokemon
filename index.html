@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de Pokémon</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Cards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cards-container">
-        <div class="pokemon-card">
-            <img class="pokemon-image" src="images/bulbasaur.png" alt="Bulbasaur">
-            <div class="pokemon-info">
-                <h2 class="pokemon-name">Bulbasaur</h2>
-                <p class="pokemon-type plant">Planta</p>
-                <p class="pokemon-type poison">Verí</p>
-                <p class="pokemon-description">
-                    Bulbasaur és un Pokémon de tipus Planta i Verí. És fàcil distingir-lo per la llavor que té a l'esquena, que creix a mesura que ell ho fa.
-                </p>
-            </div>
+  <header>
+    <h1 class="page-title">Pokémon Cards</h1>
+  </header>
+
+  <main class="container">
+    <article class="pokemon-card">
+      <img src="images/bulbasaur.png" alt="Bulbasaur">
+      <div class="pokemon-info">
+        <h2 class="pokemon-name">Bulbasaur</h2>
+        <div class="types">
+          <span class="pokemon-type plant">Planta</span>
+          <span class="pokemon-type poison">Verí</span>
         </div>
-        <div class="pokemon-card">
-            <img class="pokemon-image" src="images/rayquaza.png" alt="Rayquaza">
-            <div class="pokemon-info">
-                <h2 class="pokemon-name">Rayquaza</h2>
-                <p class="pokemon-type dragon">Drac</p>
-                <p class="pokemon-type flying">Volador</p>
-                <p class="pokemon-description">
-                    Rayquaza és un Pokémon llegendari de tipus Drac i Volador. Viu al cel i pot calmar les lluites entre Kyogre i Groudon amb la seva presència.
-                </p>
-            </div>
+        <p class="pokemon-description">
+          Bulbasaur és un Pokémon de tipus Planta i Verí amb una aura misteriosa que brilla sota la lluna.
+        </p>
+      </div>
+    </article>
+
+    <article class="pokemon-card">
+      <img src="images/rayquaza.png" alt="Rayquaza">
+      <div class="pokemon-info">
+        <h2 class="pokemon-name">Rayquaza</h2>
+        <div class="types">
+          <span class="pokemon-type dragon">Drac</span>
+          <span class="pokemon-type flying">Volador</span>
         </div>
-    </div>
+        <p class="pokemon-description">
+          Rayquaza és un Pokémon llegendari de tipus Drac i Volador. Viu al cel i calma les disputes entre Kyogre i Groudon.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 awpzz. Tots els drets reservats.</p>
+  </footer>
 </body>
 </html>
