@@ -6,131 +6,136 @@
   
   body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #2e2e2e, #444);
-    color: #ffffff;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b3d);
+    color: #e0e0e0;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
   }
   
   .page-title {
     text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 50px 0 20px;
-    color: #f5a623;
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #ffde59;
   }
   
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 24px;
+    max-width: 1200px;
+    width: 100%;
   }
   
   .pokemon-card {
-    background: linear-gradient(145deg, #333, #0d0d0d);
-    border: 2px solid #444;
-    border-radius: 15px;
-    width: 300px;
+    background: radial-gradient(circle at top left, #35354a, #1e1e2f);
+    border: 1px solid #4a4a6a;
+    border-radius: 20px;
+    width: 280px;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
   }
   
   .pokemon-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+    transform: translateY(-12px) rotate(-1deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   }
   
   .pokemon-card img {
     width: 100%;
-    height: 280px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    height: 260px;
+    object-fit: contain;
+    background: #222;
+    transition: transform 0.4s ease;
   }
   
   .pokemon-card img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05) rotate(2deg);
   }
   
   .pokemon-info {
-    padding: 20px;
-    background-color: #222;
-    border-top: 2px solid #444;
+    padding: 24px;
+    background-color: #272734;
   }
   
   .pokemon-name {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #f5a623;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ffa726;
     text-transform: capitalize;
-    transition: color 0.3s ease;
-  }
-  
-  .pokemon-name:hover {
-    color: #ff6f61;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   }
   
   .types {
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
   }
   
   .pokemon-type {
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-weight: bold;
-    margin: 0 5px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
     text-transform: capitalize;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
   }
   
   .pokemon-type.plant {
-    background-color: #4caf50;
-    color: #fff;
+    border: 1px solid #66bb6a;
+    color: #66bb6a;
   }
   
   .pokemon-type.poison {
-    background-color: #9c27b0;
-    color: #fff;
+    border: 1px solid #ab47bc;
+    color: #ab47bc;
   }
   
   .pokemon-type.dragon {
-    background-color: #536dfe;
-    color: #fff;
+    border: 1px solid #536dfe;
+    color: #536dfe;
   }
   
   .pokemon-type.flying {
-    background-color: #26c6da;
-    color: #fff;
+    border: 1px solid #29b6f6;
+    color: #29b6f6;
   }
   
   .pokemon-type.fire {
-    background-color: #e53935;
-    color: #fff;
+    border: 1px solid #ef5350;
+    color: #ef5350;
   }
   
   .pokemon-description {
     font-size: 1rem;
-    color: #ccc;
-    line-height: 1.4;
-    margin-top: 10px;
-    text-align: justify;
+    color: #cfd8dc;
+    line-height: 1.6;
+    margin-top: 12px;
+    text-align: left;
+    max-height: 100px;
+    overflow: auto;
   }
   
   .footer {
     margin-top: auto;
     font-size: 0.8rem;
-    color: #888;
+    color: #777;
     text-align: center;
-    padding: 10px 0;
+    padding: 12px 0;
     width: 100%;
   }
   
@@ -138,10 +143,10 @@
     margin: 0;
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .page-title {
       font-size: 2.5rem;
-      margin: 30px 0 15px;
+      margin-bottom: 20px;
     }
     .pokemon-card {
       width: 90%;
@@ -150,4 +155,5 @@
       font-size: 0.9rem;
     }
   }
+  
   
