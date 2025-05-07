@@ -1,118 +1,63 @@
-/* Estils generals */
 body {
     margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-/* Navegació */
-.navbar {
-    background-color: #222;
-    padding: 1rem 2rem;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #00bcd4;
-}
-
-/* Contingut principal */
-.landing-container {
-    background-color: #fff;
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Capçalera */
-.header {
-    margin-bottom: 2rem;
-}
-
-.product-title {
-    font-size: 2.5rem;
-    color: #00796b;
-}
-
-.product-subtitle {
-    font-size: 1.2rem;
-    color: #888;
-}
-
-/* Hero Image */
-.hero-image {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.hero-text {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-
-/* Descripció */
-.product-description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 2rem;
-}
-
-/* Botó CTA */
-.cta-button {
-    background-color: #28a745;
-    color: white;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #218838;
-}
-
-/* Peu de pàgina */
-.main-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
+    align-items: center;
+    height: 100vh;
 }
 
-.footer-link {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.pokemon-card {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
 }
 
-.footer-link:hover {
-    color: #00bcd4;
+.pokemon-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pokemon-info {
+    background-color: #d0f5c9;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.pokemon-name {
+    font-family: 'Verdana', sans-serif;
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pokemon-type {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.plant {
+    background-color: #81c784;
+    color: #fff;
+}
+
+.poison {
+    background-color: #ba68c8;
+    color: #fff;
+}
+
+.pokemon-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
 }
